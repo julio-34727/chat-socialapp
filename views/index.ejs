@@ -3,11 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Real-time chat app with node.js, express.js and socket.io">
+    <meta name="keywords" content="chat, real-time, node.js, express.js, socket.io, js, css, html">
+    <meta name="author" content="Julio ZINGA, Jeason Reaguelle, Emmanuel Treppant">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../public/assets/css/index.css">
     <title>Real-time Chat App</title>
 </head>
 <body>
-    <h1>Hello Chat app</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum culpa placeat sit mollitia impedit explicabo.</p>
+    <header>
+        <h1>Chat App</h1>
+    </header>
+    <main>
+        <div class="chat">
+            <div id="user">
+                <div id="user__change">
+                    <input id="user__name" type="text">
+                    <button id="user__send" type="button">Change username</button>
+                </div>
+            </div>
+            <div id="chatroom">
+                <div id="feedback"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; Copyright 2018-1019 &ndash; Julio, Jeason and Emmanuel
+    </footer>
+
+    <!-- JAVASCRIPT  FILES & LIBRARIES -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="../public/assets/js/index.js"></script>
 </body>
 </html>
